@@ -5,3 +5,4 @@ See https://github.com/jes/scamp-cpu
  - Day 1: https://www.youtube.com/watch?v=VLmiqzFJQRI
  - Day 2: https://www.youtube.com/watch?v=66Ip7WAfMx8
  - Day 3: https://www.youtube.com/watch?v=VHw3VWo7eZ8
+ - Day 4: https://www.youtube.com/watch?v=ZpLzkmS1qlw
