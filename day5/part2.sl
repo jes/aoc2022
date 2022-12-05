@@ -5,10 +5,8 @@ var line = zmalloc(128);
 
 var stacks = malloc(10);
 var i = 0;
-while (i < 10) {
-    stacks[i] = grnew();
-    i++;
-};
+while (i < 10)
+    stacks[i++] = grnew();
 
 var idx;
 
@@ -30,34 +28,17 @@ while (bgets(in, line, 128)) {
 };
 
 i = 1;
-while (i < 10) {
-    grrev(stacks[i]);
-    printf("%d: ", [i]);
-    grwalk(stacks[i], putchar);
-    putchar('\n');
-    i++;
-};
-
-var dumpstacks = func() {
-    var i = 1;
-    while (i < 10) {
-        printf("%d: ", [i]);
-        grwalk(stacks[i], putchar);
-        putchar('\n');
-        i++;
-    };
-};
+while (i < 10)
+    grrev(stacks[i++]);
 
 var count; var from; var to;
 var c;
 while (bscanf(in, "move %d from %d to %d", [&count, &from, &to])) {
-    #printf("move %d from %d to %d:\n", [count,from,to]);
     c = count;
-    while (c--) {
+    while (c--)
         grpush(stacks[to], grget(stacks[from], grlen(stacks[from])-c-1));
-    };
-    while (count--) grpop(stacks[from]);
-    #dumpstacks();
+    while (count--)
+        grpop(stacks[from]);
 };
 
 i = 1;

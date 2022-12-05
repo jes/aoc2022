@@ -24,10 +24,7 @@ while (bgets(in, line, 128)) {
     i = 0;
     while (i < len) {
         ch = pri(line[i]);
-        if (got[ch] == idx-1) {
-            #printf("count %c\n", [line[i]]);
-            got[ch] = got[ch] + 1;
-        };
+        if (got[ch] == idx-1) got[ch] = got[ch] + 1;
         i++;
     };
     if (idx == 3) {
@@ -37,8 +34,6 @@ while (bgets(in, line, 128)) {
         while (i < 53) {
             if (got[i] == 3) {
                 sum = sum + i;
-                #if (i < 27) printf("letter %c\n", [i+'a'-1])
-                #else printf("letter %c\n", [i+'A'-27]);
                 count++;
             };
             i++;

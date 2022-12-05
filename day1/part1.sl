@@ -5,7 +5,6 @@ include "bigint.sl";
 var in = bfdopen(0, O_READ);
 var line = malloc(128);
 
-var n;
 var sum = bignew(0);
 var answer = bignew(0);
 while (bgets(in, line, 128)) {

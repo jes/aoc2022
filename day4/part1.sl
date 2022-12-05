@@ -1,7 +1,6 @@
 include "bufio.sl";
 
 var in = bfdopen(0, O_READ);
-var line = malloc(128);
 
 var a; var b; var c; var d;
 var count = 0;

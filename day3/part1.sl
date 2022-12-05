@@ -20,19 +20,16 @@ while (bgets(in, line, 128)) {
 
     i = 0;
     while (i+i < len) {
-        #printf("%c: %d\n", [line[i], pri(line[i])]);
         got[pri(line[i])] = 1;
         i++;
     };
     while (i < len) {
         if (got[pri(line[i])]) {
             sum = sum + pri(line[i]);
-            #printf("%c is the duplicate\n", [line[i]]);
             break;
         };
         i++;
     };
-    #printf("...\n", 0);
 };
 
 printf("%d\n", [sum]);

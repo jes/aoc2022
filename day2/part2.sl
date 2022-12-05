@@ -21,11 +21,11 @@ var me;
 while (bgets(in, line, 128)) {
     opponent = line[0]-'A';
     want = line[2]-'X';
-    if (want == 1) {
+    if (want == 1) { # draw
         me = opponent;
     } else if (want == 0) { # lose
         me = losesto[opponent];
-    } else {
+    } else { # win
         me = beats[opponent];
     };
     # rock=0, paper=1, scissors=2
