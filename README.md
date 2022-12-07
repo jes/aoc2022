@@ -7,3 +7,4 @@ See https://github.com/jes/scamp-cpu
  - Day 3: https://www.youtube.com/watch?v=VHw3VWo7eZ8
  - Day 4: https://www.youtube.com/watch?v=ZpLzkmS1qlw
  - Day 6: https://www.youtube.com/watch?v=BmJOne1LwFE
+ - Day 7: https://www.youtube.com/watch?v=NVPW6-EcsbA
