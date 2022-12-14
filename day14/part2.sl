@@ -11,11 +11,6 @@ var minx = 500-181; var maxx = 500+181;
 var miny = 0; var maxy = 181;
 var floory = 180;
 
-var WALL = 1;
-var SAND = 2;
-
-#printf("change floory to 180!!!\n", 0);
-
 var grid = bmnew(maxx-minx, maxy-miny);
 
 var skipover = func(s, ch) {
@@ -71,22 +66,4 @@ while (bgets(in, line, 512)) {
     grfree(row);
 };
 
-var map;
-var drawgrid = func() {
-    var y = 0;
-    var x;
-    while (y < 12) {
-        x = 490;
-        while (x < 510) {
-            if (map(x,y) == WALL) putchar('#')
-            else if (map(x,y) == SAND) putchar('o')
-            else putchar(' ');
-            x++;
-        };
-        y++;
-        putchar('\n');
-    };
-};
-
 printf("%d\n", [drop(500,0)]);
-#drawgrid();
