@@ -14,3 +14,4 @@ See https://github.com/jes/scamp-cpu
  - Day 11: https://www.youtube.com/watch?v=B3T6-WR-2Rc
  - Day 12: https://www.youtube.com/watch?v=J5VWvRqXjJs
  - Day 13: https://www.youtube.com/watch?v=oVNeWlGXvyc
+ - Day 14: https://www.youtube.com/watch?v=5d34XXOT2oY
