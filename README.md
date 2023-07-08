@@ -18,4 +18,4 @@ See https://github.com/jes/scamp-cpu
  - Day 15: https://www.youtube.com/watch?v=jZ4geVldWXg
  - Day 17: https://www.youtube.com/watch?v=VZ6l61rKFUE
 
-Day 18 onwards in golang on a normal computer instead of SCAMP.
+Day 18 onwards in golang or dlang on a normal computer instead of SCAMP.
