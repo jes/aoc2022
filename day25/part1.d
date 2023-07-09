@@ -2,7 +2,7 @@ import std.stdio;
 import std.algorithm;
 import std.conv;
 
-long parseSNAFU(char[] line) {
+long parseSNAFU(const(char)[] line) {
     long n = 0;
     foreach (c; line) {
         n *= 5;
@@ -56,11 +56,11 @@ char[] formatSNAFU(long n) {
 }
 
 unittest {
-    assert(parseSNAFU(cast(char[])"2=-01") == 976);
-    assert(parseSNAFU(cast(char[])"20012") == 1257);
-    assert(parseSNAFU(cast(char[])"2=-1=0") == 4890);
-    assert(parseSNAFU(cast(char[])"1-0---0") == 12345);
-    assert(parseSNAFU(cast(char[])"1121-1110-1=0") == 314159265);
+    assert(parseSNAFU("2=-01") == 976);
+    assert(parseSNAFU("20012") == 1257);
+    assert(parseSNAFU("2=-1=0") == 4890);
+    assert(parseSNAFU("1-0---0") == 12345);
+    assert(parseSNAFU("1121-1110-1=0") == 314159265);
 
     foreach (i; 0 .. 10000) {
         if (parseSNAFU(formatSNAFU(i)) != i) {
